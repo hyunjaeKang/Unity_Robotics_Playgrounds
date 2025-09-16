@@ -17,3 +17,20 @@
  - Unity : 6000.2.4.f1
  - ML-Agents (Unity package) : Release 23 [4.0.0]
  - mlagent (python package)  : 1.1.0
+
+
+
+ ---
+### Reference:
+
+
+- ***Papers***:
+    - ....
+
+- ***Blog***:
+    - https://docs.unity3d.com/Packages/com.unity.ml-agents@4.0/manual/Learning-Environment-Examples.html
+
+
+- ***Github***:
+    - https://github.com/Unity-Technologies/ml-agents
+    - https://github.com/reinforcement-learning-kr/Unity_ML_Agents_2.0
