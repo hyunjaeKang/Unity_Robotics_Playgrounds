@@ -6,7 +6,7 @@ using Unity.MLAgents.Sensors;
 using Unity.MLAgents.Actuators;
 using UnityEngine.Rendering;
 using UnityEngine.Serialization;
-using System.Collections.Generic; // Add this line
+using System.Collections.Generic;
 
 public class GridAgent : Agent
 {
