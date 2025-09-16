@@ -11,3 +11,9 @@
  pip install ipykernel ipywidgets
  pip install torchvision torchaudio
  ```
+
+ ### Test enviroments
+
+ - Unity : 6000.2.4.f1
+ - ML-Agents (Unity package) : Release 23 [4.0.0]
+ - mlagent (python package)  : 1.1.0
