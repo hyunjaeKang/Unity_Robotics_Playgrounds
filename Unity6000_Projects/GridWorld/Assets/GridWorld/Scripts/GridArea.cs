@@ -11,6 +11,7 @@ public class GridArea : MonoBehaviour
     public List<GameObject> actorObjs;
     [HideInInspector]
     public int[] players;
+    public List<int> otherPos = new List<int>();
 
     public GameObject trueAgent;
 
@@ -32,6 +33,9 @@ public class GridArea : MonoBehaviour
 
     EnvironmentParameters m_ResetParams;
 
+
+    // Unity ³»ÀåÇÔ¼ö·Î½á ½ÇÇà ½Ã ÃÖÃÊ·Î ÇÑ¹ø¸¸ È£ÃâµÈ´Ù.
+    // º®°ú ¶¥ Ä«¸Þ¶ó µîµî GameObjectµéÀ» LoadÇÑ´Ù.
     public void Start()
     {
         m_ResetParams = Academy.Instance.EnvironmentParameters;
@@ -52,6 +56,8 @@ public class GridArea : MonoBehaviour
         m_InitialPosition = transform.position;
     }
 
+    // È¯°æÀÇ ¿ä¼ÒµéÀ» ¼³Á¤ÇÏ´Â ÇÔ¼ö
+    // º®°ú Àå¾Ö¹° ¸ñÇ¥ÁöÁ¡À» »ý¼ºÇÑ´Ù.
     void SetEnvironment()
     {
         transform.position = m_InitialPosition * (m_ResetParams.GetWithDefault("gridSize", 5f) + 1);
@@ -84,6 +90,8 @@ public class GridArea : MonoBehaviour
         m_AgentCam.transform.localPosition = new Vector3((gridSize - 1) / 2f, gridSize + 1f, (gridSize - 1) / 2f);
     }
 
+    // ¿¡ÇÇ¼Òµå°¡ ½ÃÀÛ µÉ ¶§ È£ÃâµÇ´Â ÇÔ¼ö
+    // º® Àå¿¡¹° ¿¡ÀÌÀüÆ®  µîµîÀ§ À§Ä¡°¡ ÁöÁ¤µÈ´Ù.
     public void AreaReset()
     {
         var gridSize = (int)m_ResetParams.GetWithDefault("gridSize", 5f);
@@ -102,13 +110,17 @@ public class GridArea : MonoBehaviour
         }
         var numbersA = numbers.ToArray();
 
+        otherPos.Clear();
         for (var i = 0; i < players.Length; i++)
         {
             var x = (numbersA[i]) / gridSize;
-            var y = (numbersA[i]) % gridSize;
+            var z = (numbersA[i]) % gridSize;
             var actorObj = Instantiate(m_Objects[players[i]], transform);
-            actorObj.transform.localPosition = new Vector3(x, -0.25f, y);
+            actorObj.transform.localPosition = new Vector3(x, -0.25f, z);
             actorObjs.Add(actorObj);
+
+            otherPos.Add(x);
+            otherPos.Add(z);
         }
 
         var xA = (numbersA[players.Length]) / gridSize;
