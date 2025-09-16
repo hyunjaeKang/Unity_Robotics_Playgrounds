@@ -110,3 +110,11 @@ InitTestScene*.unity*
 **.DS_Store**
 
 **temp**
+
+# Linux Output
+**.x86_64
+**Linux_Data
+**_DoNotShip
+UnityPlayer.so
+libdecor-0.so.0
+libdecor-cairo.so
