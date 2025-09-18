@@ -1,0 +1,42 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1758138118",
+        "python_version": "3.10.12 (main, Jul  5 2023, 15:02:25) [Clang 14.0.6 ]",
+        "command_line_arguments": "/Users/hyunjae.k/anaconda3/envs/mlagents/bin/mlagents-learn --env= --results-dir= --run-id=GridWorld_PPO --inference",
+        "mlagents_version": "1.1.0",
+        "mlagents_envs_version": "1.1.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "2.8.0",
+        "numpy_version": "1.23.5",
+        "end_time_seconds": "1758138119"
+    },
+    "total": 0.8588491250411607,
+    "count": 1,
+    "self": 0.0016627490986138582,
+    "children": {
+        "run_training.setup": {
+            "total": 0.041190416959580034,
+            "count": 1,
+            "self": 0.041190416959580034
+        },
+        "TrainerController.start_learning": {
+            "total": 0.8159959589829668,
+            "count": 1,
+            "self": 0.00032675103284418583,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 0.8156687499722466,
+                    "count": 1,
+                    "self": 0.8156687499722466
+                },
+                "trainer_threads": {
+                    "total": 4.5797787606716156e-07,
+                    "count": 1,
+                    "self": 4.5797787606716156e-07
+                }
+            }
+        }
+    }
+}
