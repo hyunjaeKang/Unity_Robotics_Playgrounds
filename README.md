@@ -29,6 +29,7 @@
 
 - ***Blog***:
     - https://docs.unity3d.com/Packages/com.unity.ml-agents@4.0/manual/Learning-Environment-Examples.html
+    - https://unity-technologies.github.io/ml-agents/Training-ML-Agents/
 
 
 - ***Github***:
