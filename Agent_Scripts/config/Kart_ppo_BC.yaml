@@ -23,3 +23,8 @@ behaviors:
     max_steps: 5000000
     time_horizon: 64
     summary_freq: 15000
+    behavioral_cloning:
+      demo_path: demo/KartAgent.demo
+      steps: 0
+      strength: 0.05
+      samples_per_update: 512
