@@ -12,6 +12,9 @@
 
 - **[NOTE]** This step is required for each Unity Project.
 
+
+-----
+
 ### Setup a conda environment
 
  ```
@@ -24,6 +27,9 @@
  pip install torchvision torchaudio
  ```
 
+-----
+
+
 ### Test packages
 | Package | Version |
 | :---: | :---: |
@@ -31,25 +37,152 @@
 |ML-Agents (Unity package) | Release 23 [4.0.0] |
 | mlagent (python package) | 1.1.0 |
 
-### Learning Environments
+----
 
-| Name| Screenshot | Unity Project | Python API | ML Agents |
-| :--- | :---: | :---: | :----  | :--- |
-| 3D Ball | <img src=Unity6000_Envs/3DBall.png>| [3DBall](./Unity6000_Projects/3DBall/) | [3DBall.ipynb](/Agent_Scripts/3DBall.ipynb) | [3DBall_ml.ipynb](/Agent_Scripts/3DBall_ml.ipynb)
-| GridWorld | <img src=Unity6000_Envs/GridWorld.png>| [GridWorld](./Unity6000_Projects/GridWorld/)| <br>[GridWorld_DQN.ipynb](/Agent_Scripts/GridWorld_DQN.ipynb)</br> <br>[GridWorld_A2C.ipynb](/Agent_Scripts/GridWorld_A2C.ipynb)</br> | [GridWorld_ml.ipynb](/Agent_Scripts/GridWorld_ml.ipynb) |
-| Drone | <img src=Unity6000_Envs/Drone.png> | [Drone](./Unity6000_Projects/Drone/) | [Drone_DDPG.ipynb](/Agent_Scripts/Drone_DDPG.ipynb) | [Drone_ml.ipynb](/Agent_Scripts/Drone_ml.ipynb) |
-| Kart | <img src=Unity6000_Envs/Kart.png> | [Kart](./Unity6000_Projects/Kart/) | [Kart_BC.ipynb](/Agent_Scripts/Kart_BC.ipynb)| <br>[Kart_ml.ipynb](/Agent_Scripts/Kart_ml.ipynb)</br> <br>[Kart_BC_ml.ipynb](/Agent_Scripts/Kart_BC_ml.ipynb)</br> <br>[Kart_BC_GAIL_ml.ipynb](/Agent_Scripts/Kart_BC_GAIL_ml.ipynb)</br> |
-| Dodge | <img src=Unity6000_Envs/Dodge.png> | [Dodge](./Unity6000_Projects/Dodge/) | <br>[Dodge_Random_PPO.ipynb](/Agent_Scripts/Dodge_Random_PPO.ipynb)</br> <br>[Dodge_Curriculum_PPO.ipynb](/Agent_Scripts/Dodge_Curriculum_PPO.ipynb)</br>  | <br>[Dodge_ml.ipynb.ipynb](/Agent_Scripts/Dodge_ml.ipynb.ipynb)</br> |
-| Dodge-Attention | <img src=Unity6000_Envs/Dodge_Att.png> | [Dodge_Att](./Unity6000_Projects/Dodge_Attention/) |  [Dodge_Attention_PPO.ipynb](/Agent_Scripts/Dodge_Attention_PPO.ipynb) | [Dodge_Attention_ml.ipynb](/Agent_Scripts/Dodge_Attention_ml.ipynb) |
-| Pong | <img src=Unity6000_Envs/Pong.png> | [Pong](./Unity6000_Projects/Pong/) |  [Pong_Adversarial.ipynb](/Agent_Scripts/Pong_Adversarial.ipynb) | [Pong_Adversarial_ml.ipynb](/Agent_Scripts/Pong_Adversarial_ml.ipynb) |
-| EscapeRoom | <img src=Unity6000_Envs/EscapeRoom.png> |[EscapeRoom](./Unity6000_Projects/EscapeRoom/) |  [EscapeRoom_MAPOCA.ipynb](/Agent_Scripts/EscapeRoom_MAPOCA.ipynb) | [EscapeRoom_MAPOCA_ml.ipynb](/Agent_Scripts/EscapeRoom_MAPOCA_ml.ipynb) |
-| Maze |  <img src=Unity6000_Envs/Maze.png>  |[Maze](./Unity6000_Projects/Maze/) |  [Maze_RND_PPO.ipynb](/Agent_Scripts/Maze_RND_PPO.ipynb) | [Maze_RND_PPO_ml.ipynb](/Agent_Scripts/Maze_RND_PPO_ml.ipynb) |
-| TwoMission |  <img src=Unity6000_Envs/TwoMission.png> | [TwoMission](./Unity6000_Projects/TwoMissions/) |  <br>[TwoMission_PPO.ipynb](/Agent_Scripts/TwoMission_PPO.ipynb)</br>  <br>[TwoMission_HyperPPO.ipynb](/Agent_Scripts/TwoMission_HyperPPO.ipynb)</br> | [TwoMission_Hyper_ml.ipynb](/Agent_Scripts/TwoMission_Hyper_ml.ipynb) |
-| Crawler |  <img src=Unity6000_Envs/Crawler.png> | [Crawler](./Unity6000_Projects/Crawler/) |   | <br>[Crawer_ml.ipynb](/Agent_Scripts/Crawer_ml.ipynb)</br> <br>[Crawer_BC_ml.ipynb](/Agent_Scripts/Crawer_BC_ml.ipynb)</br> |
-| Walker |  <img src=Unity6000_Envs/Walker.png> | [Waler](./Unity6000_Projects/Walker/) |   | [Walker_ml.ipynb](/Agent_Scripts/Walker_ml.ipynb) |
-| Worm |  <img src=Unity6000_Envs/Worm.png> | [Worm](./Unity6000_Projects/Worm/) |  | [Worm_ml.ipynb](/Agent_Scripts/Worm_ml.ipynb) |
-| SoccerTwos | <img src=Unity6000_Envs/SoccerTwos.png> |[Soccer](./Unity6000_Projects/Soccer/) |   | [SoccerTwos_ml.ipynb](/Agent_Scripts/SoccerTwos_ml.ipynb) |
-| StrikersVsGoalie | <img src=Unity6000_Envs/StrikersVsGoalie.png> |[Soccer](./Unity6000_Projects/Soccer/) |   | [StrikersVsGoalie_ml.ipynb](/Agent_Scripts/StrikersVsGoalie_ml.ipynb) |
+### Playgrounds
+
+<p></p>
+
+
+<table  border="1">
+  <thead>
+    <tr>
+      <th style="text-align: center;">Playground</th>
+      <th style="text-align: center;">Screenshot</th>
+      <th style="text-align: center;">Unity Project</th>
+      <th style="text-align: center;">Notebook-Python API</th>
+      <th style="text-align: center;">Notebook-ML Agents</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <th style="text-align: center; padding: 10px;" rowspan="1"><b>3D Ball</b></th>
+        <th style="text-align: center; padding: 10px;" rowspan="1"><img src="./Unity6000_Envs/3DBall.png?raw=true"></th>
+        <th style="text-align: center; padding: 10px;" rowspan="1"><a href="./Unity6000_Projects/3DBall/">3DBall</a></th>
+        <th style="text-align: center; padding: 10px;" rowspan="1"><a href="./Agent_Scripts/3DBall.ipynb">3DBall.ipynb</a></th>
+        <th style="text-align: center; padding: 10px;" rowspan="1"><a href="./Agent_Scripts/3DBall_ml.ipynb">3DBall_ml.ipynb</a></th>
+    </tr>
+    <tr>center
+        <th style="text-align: center; padding: 10px;" rowspan="2"><b>GridWorld</b></th>
+        <th style="text-align: center; padding: 10px;" rowspan="2"><img src="./Unity6000_Envs/GridWorld.png?raw=true"></th>
+        <th style="text-align: center; padding: 10px;" rowspan="2"><a href="./Unity6000_Projects/GridWorld/">GridWorld</a></th>
+        <th style="text-align: center; padding: 10px;" rowspan="1"><a href="./Agent_Scripts/GridWorld_DQN.ipynb">GridWorld_DQN.ipynb</a></th>
+        <th style="text-align: center; padding: 10px;" rowspan="2"><a href="./Agent_Scripts/GridWorld_ml.ipynb">GridWorld_ml.ipynb</a></th>
+    </tr>
+    <tr>
+        <th style="text-align: center; padding: 10px;" rowspan="1"><a href="./Agent_Scripts/GridWorld_A2C.ipynb">GridWorld_A2C.ipynb</a></th>
+    </tr>
+    <tr>
+        <th style="text-align: center; padding: 10px;" rowspan="1"><b>Drone</b></th>
+        <th style="text-align: center; padding: 10px;" rowspan="1"><img src="./Unity6000_Envs/Drone.png?raw=true"></th>
+        <th style="text-align: center; padding: 10px;" rowspan="1"><a href="./Unity6000_Projects/Drone/">Drone</a></th>
+        <th style="text-align: center; padding: 10px;" rowspan="1"><a href="./Agent_Scripts/Drone_DDPG.ipynb">Drone_DDPG.ipynb</a></th>
+        <th style="text-align: center; padding: 10px;" rowspan="1"><a href="./Agent_Scripts/Drone_ml.ipynb">Drone_ml.ipynb</a></th>
+    </tr>
+    <tr>
+        <th style="text-align: center; padding: 10px;" rowspan="3"><b>Kart</b></th>
+        <th style="text-align: center; padding: 10px;" rowspan="3"><img src="./Unity6000_Envs/Kart.png?raw=true"></th>
+        <th style="text-align: center; padding: 10px;" rowspan="3"><a href="./Unity6000_Projects/Kart/">Kart</a></th>
+        <th style="text-align: center; padding: 10px;" rowspan="3"><a href="./Agent_Scripts/Kart_BC.ipynb">Kart_BC.ipynb</a></th>
+        <th style="text-align: center; padding: 10px;" rowspan="1"><a href="./Agent_Scripts/Kart_ml.ipynb">Kart_ml.ipynb</a></th>
+    </tr>
+    <tr>
+        <th style="text-align: center; padding: 10px;" rowspan="1"><a href="./Agent_Scripts/Kart_BC_ml.ipynb">Kart_BC_ml.ipynb</a></th>
+    </tr>
+    <tr>
+        <th style="text-align: center; padding: 10px;" rowspan="1"><a href="./Agent_Scripts/Kart_BC_GAIL_ml.ipynb">Kart_BC_GAIL_ml.ipynb</a></th>
+    </tr>
+    <tr>
+        <th style="text-align: center; padding: 10px;" rowspan="2"><b>Dodge</b></th>
+        <th style="text-align: center; padding: 10px;" rowspan="2"><img src="./Unity6000_Envs/Dodge.png?raw=true"></th>
+        <th style="text-align: center; padding: 10px;" rowspan="2"><a href="./Unity6000_Projects/Dodge/">Dodge</a></th>
+        <th style="text-align: center; padding: 10px;" rowspan="1"><a href="./Agent_Scripts/Dodge_Random_PPO.ipynb">Dodge_Random_PPO.ipynb</a></th>
+        <th style="text-align: center; padding: 10px;" rowspan="2"><a href="./Agent_Scripts/Dodge_ml.ipynb">Dodge_ml.ipynb</a></th>
+    </tr>
+    <tr>
+        <th style="text-align: center; padding: 10px;" rowspan="1"><a href="./Agent_Scripts/Dodge_Curriculum_PPO.ipynb">Dodge_Curriculum_PPO.ipynb</a></th>
+    </tr>
+    <tr>
+        <th style="text-align: center; padding: 10px;" rowspan="1"><b>Dodge-Attention</b></th>
+        <th style="text-align: center; padding: 10px;" rowspan="1"><img src="./Unity6000_Envs/Dodge_Att.png?raw=true"></th>
+        <th style="text-align: center; padding: 10px;" rowspan="1"><a href="./Unity6000_Projects/Dodge_Attention/">Dodge_Attention</a></th>
+        <th style="text-align: center; padding: 10px;" rowspan="1"><a href="./Agent_Scripts/Dodge_Attention_PPO.ipynb">Dodge_Attention_PPO.ipynb</a></th>
+        <th style="text-align: center; padding: 10px;" rowspan="1"><a href="./Agent_Scripts/Dodge_Attention_ml.ipynb">Dodge_Attention_ml.ipynb</a></th>
+    </tr>
+    <tr>
+        <th style="text-align: center; padding: 10px;" rowspan="1"><b>Pong</b></th>
+        <th style="text-align: center; padding: 10px;" rowspan="1"><img src="./Unity6000_Envs/Pong.png?raw=true"></th>
+        <th style="text-align: center; padding: 10px;" rowspan="1"><a href="./Unity6000_Projects/Pong/">Pong</a></th>
+        <th style="text-align: center; padding: 10px;" rowspan="1"><a href="./Agent_Scripts/Pong_Adversarial.ipynb">Pong_Adversarial.ipynb</a></th>
+        <th style="text-align: center; padding: 10px;" rowspan="1"><a href="./Agent_Scripts/Pong_Adversarial_ml.ipynb">Pong_Adversarial_ml.ipynb</a></th>
+    </tr>
+    <tr>
+        <th style="text-align: center; padding: 10px;" rowspan="1"><b>EscapeRoom</b></th>
+        <th style="text-align: center; padding: 10px;" rowspan="1"><img src="./Unity6000_Envs/EscapeRoom.png?raw=true"></th>
+        <th style="text-align: center; padding: 10px;" rowspan="1"><a href="./Unity6000_Projects/EscapeRoom/">EscapeRoom</a></th>
+        <th style="text-align: center; padding: 10px;" rowspan="1"><a href="./Agent_Scripts/EscapeRoom_MAPOCA.ipynb">EscapeRoom_MAPOCA.ipynb</a></th>
+        <th style="text-align: left; padding: 10px;" rowspan="1"><a href="./Agent_Scripts/EscapeRoom_MAPOCA_ml.ipynb">EscapeRoom_MAPOCA_ml.ipynb</a></th>
+    </tr>
+    <tr>
+        <th style="text-align: center; padding: 10px;" rowspan="1"><b>Maze</b></th>
+        <th style="text-align: center; padding: 10px;" rowspan="1"><img src="./Unity6000_Envs/Maze.png?raw=true"></th>
+        <th style="text-align: center; padding: 10px;" rowspan="1"><a href="./Unity6000_Projects/Maze/">Maze</a></th>
+        <th style="text-align: center; padding: 10px;" rowspan="1"><a href="./Agent_Scripts/Maze_RND_PPO.ipynb">Maze_RND_PPO.ipynb</a></th>
+        <th style="text-align: center; padding: 10px;" rowspan="1"><a href="./Agent_Scripts/Maze_RND_PPO_ml.ipynb">Maze_RND_PPO_ml.ipynb</a></th>
+    </tr>
+    <tr>
+        <th style="text-align: center; padding: 10px;" rowspan="2"><b>TwoMission</b></th>
+        <th style="text-align: center; padding: 10px;" rowspan="2"><img src="./Unity6000_Envs/TwoMission.png?raw=true"></th>
+        <th style="text-align: center; padding: 10px;" rowspan="2"><a href="./Unity6000_Projects/TwoMission/">TwoMission</a></th>
+        <th style="text-align: center; padding: 10px;" rowspan="1"><a href="./Agent_Scripts/TwoMission_PPO.ipynb">TwoMission_PPO.ipynb</a></th>
+        <th style="text-align: center; padding: 10px;" rowspan="2"><a href="./Agent_Scripts/TwoMission_Hyper_ml.ipynb">TwoMission_Hyper_ml.ipynb</a></th>
+    </tr>
+    <tr>
+        <th style="text-align: center; padding: 10px;" rowspan="1"><a href="./Agent_Scripts/TwoMission_HyperPPO.ipynb">TwoMission_HyperPPO.ipynb</a></th>
+    </tr>
+    <tr>
+        <th style="text-align: center; padding: 10px;" rowspan="2"><b>Crawler</b></th>
+        <th style="text-align: center; padding: 10px;" rowspan="2"><img src="./Unity6000_Envs/Crawler.png?raw=true"></th>
+        <th style="text-align: center; padding: 10px;" rowspan="2"><a href="./Unity6000_Projects/Crawler/">Crawler</a></th>
+        <th style="text-align: center; padding: 10px;" rowspan="2"></th>
+        <th style="text-align: center; padding: 10px;" rowspan="1"><a href="./Agent_Scripts/Crawer_ml.ipynb">Crawer_ml.ipynb</a></th>
+    </tr>
+    <tr>
+        <th style="text-align: center; padding: 10px;" rowspan="1"><a href="./Agent_Scripts/Crawer_BC_ml.ipynb">Crawer_BC_ml.ipynb</a></th>
+    </tr>
+    <tr>
+        <th style="text-align: center; padding: 10px;" rowspan="1"><b>Walker</b></th>
+        <th style="text-align: center; padding: 10px;" rowspan="1"><img src="./Unity6000_Envs/Walker.png?raw=true"></th>
+        <th style="text-align: center; padding: 10px;" rowspan="1"><a href="./Unity6000_Projects/Walker/">Crawler</a></th>
+        <th style="text-align: center; padding: 10px;" rowspan="1"></th>
+        <th style="text-align: center; padding: 10px;" rowspan="1"><a href="./Agent_Scripts/Walker_ml.ipynb">Walker_ml.ipynb</a></th>
+    </tr>
+    <tr>
+        <th style="text-align: center; padding: 10px;" rowspan="1"><b>Worm</b></th>
+        <th style="text-align: center; padding: 10px;" rowspan="1"><img src="./Unity6000_Envs/Worm.png?raw=true"></th>
+        <th style="text-align: center; padding: 10px;" rowspan="1"><a href="./Unity6000_Projects/Worm/">Worm</a></th>
+        <th style="text-align: center; padding: 10px;" rowspan="1"></th>
+        <th style="text-align: center; padding: 10px;" rowspan="1"><a href="./Agent_Scripts/Worm_ml.ipynb">Worm_ml.ipynb</a></th>
+    </tr>
+    <tr>
+        <th style="text-align: center; padding: 10px;" rowspan="1"><b>SoccerTwos</b></th>
+        <th style="text-align: center; padding: 10px;" rowspan="1"><img src="./Unity6000_Envs/SoccerTwos.png?raw=true"></th>
+        <th style="text-align: center; padding: 10px;" rowspan="1"><a href="./Unity6000_Projects/Soccer/">Soccer</a></th>
+        <th style="text-align: center; padding: 10px;" rowspan="1"></th>
+        <th style="text-align: center; padding: 10px;" rowspan="1"><a href="./Agent_Scripts/SoccerTwos_ml.ipynb">SoccerTwos_ml.ipynb</a></th>
+    </tr>
+    <tr>
+        <th style="text-align: center; padding: 10px;" rowspan="1"><b>StrikersVsGoalie</b></th>
+        <th style="text-align: center; padding: 10px;" rowspan="1"><img src="./Unity6000_Envs/StrikersVsGoalie.png?raw=true"></th>
+        <th style="text-align: center; padding: 10px;" rowspan="1"><a href="./Unity6000_Projects/Soccer/">Soccer</a></th>
+        <th style="text-align: center; padding: 10px;" rowspan="1"></th>
+        <th style="text-align: center; padding: 10px;" rowspan="1"><a href="./Agent_Scripts/StrikersVsGoalie_ml.ipynb">StrikersVsGoalie_ml.ipynb</a></th>
+    </tr>
+  </tbody>
+</table>
+
+<p></p>
+
 
  ---
 ### Reference:
