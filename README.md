@@ -41,10 +41,7 @@
 
 ### Playgrounds
 
-<p></p>
-
-
-<table  border="1">
+<table>
   <thead>
     <tr>
       <th style="text-align: center;">Playground</th>
@@ -62,7 +59,7 @@
         <th style="text-align: center; padding: 10px;" rowspan="1"><a href="./Agent_Scripts/3DBall.ipynb">3DBall.ipynb</a></th>
         <th style="text-align: center; padding: 10px;" rowspan="1"><a href="./Agent_Scripts/3DBall_ml.ipynb">3DBall_ml.ipynb</a></th>
     </tr>
-    <tr>center
+    <tr>
         <th style="text-align: center; padding: 10px;" rowspan="2"><b>GridWorld</b></th>
         <th style="text-align: center; padding: 10px;" rowspan="2"><img src="./Unity6000_Envs/GridWorld.png?raw=true"></th>
         <th style="text-align: center; padding: 10px;" rowspan="2"><a href="./Unity6000_Projects/GridWorld/">GridWorld</a></th>
