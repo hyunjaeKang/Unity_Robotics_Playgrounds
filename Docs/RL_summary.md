@@ -39,9 +39,9 @@ $ RL Methods
 
 * **Type:** On-policy, policy gradient.
 * **How it works:** Improves policy with a clipped surrogate objective to prevent large updates:
-  [
-  L^{CLIP}(\theta) = \mathbb{E}[\min(r(\theta)A, \text{clip}(r(\theta),1-\epsilon,1+\epsilon)A)]
-  ]
+
+  $L^{CLIP}(\theta) = \mathbb{E}[\min(r(\theta)A, \text{clip}(r(\theta),1-\epsilon,1+\epsilon)A)]$
+
 * **Pros:**
 
   * Stable, easy to tune.
@@ -110,9 +110,9 @@ $ RL Methods
 
 * **Type:** Off-policy, actor-critic, entropy-regularized.
 * **How it works:** Adds **entropy maximization** to encourage exploration:
-  [
+  $
   J(\pi) = \mathbb{E}[R + \alpha \mathcal{H}(\pi)]
-  ]
+  $
 * **Pros:**
 
   * Stable, sample-efficient.
