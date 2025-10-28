@@ -150,7 +150,7 @@
     <tr>
         <th align="left" rowspan="1"><b>Walker</b></th>
         <th align="left" rowspan="1"><img src="./Unity6000_Envs/Walker.png?raw=true"></th>
-        <th align="left" rowspan="1"><a href="./Unity6000_Projects/Walker/">Crawler</a></th>
+        <th align="left" rowspan="1"><a href="./Unity6000_Projects/Walker/">Walker</a></th>
         <th align="left" rowspan="1"></th>
         <th align="left" rowspan="1"><a href="./Agent_Scripts/Walker_ml.ipynb">Walker_ml.ipynb</a></th>
     </tr>
