@@ -110,9 +110,7 @@ $ RL Methods
 
 * **Type:** Off-policy, actor-critic, entropy-regularized.
 * **How it works:** Adds **entropy maximization** to encourage exploration:
-  $
-  J(\pi) = \mathbb{E}[R + \alpha \mathcal{H}(\pi)]
-  $
+  $ J(\pi) = \mathbb{E}[R + \alpha \mathcal{H}(\pi)] $
 * **Pros:**
 
   * Stable, sample-efficient.
